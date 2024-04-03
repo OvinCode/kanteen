@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .menu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item h2 {
+    margin-top: 0;
+  }
+  
+  .menu-item p {
+    margin-bottom: 0;
+  }
+  
