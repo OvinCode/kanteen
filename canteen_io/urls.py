@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path,include
 from . import views
 from .views import home
-from menu.views import menu
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('',views.home,name='home'),
-    path('menu/',include('menu.urls') ),  # Assuming the view for the menu page is named 'menu'
+
+    path('admin/', admin.site.urls),
+    
+    path('menu/',include('menu.urls') ),
+    path('account/',include('accounts.urls') ) ,
 ]
 
