@@ -60,7 +60,9 @@
 </head>
 <body>
     <div class="container">
+
         {% csrf_token %}
+        
         <h2>Register User</h2>
         <form action="/registerUser" method="POST">
             <div class="form-group">

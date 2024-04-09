@@ -348,7 +348,7 @@
         "kind": 5,
         "importPath": "accounts.urls",
         "description": "accounts.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.myAccount),\n    path('registerUser/', views.registerUser, name='registerUser'),\n    path('login/', views.login, name='login'),\n    path('logout/', views.logout, name='logout'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.myAccount),\n    path('registerUser/', views.registerUser, name='registerUser'),\n    path('login/', views.login, name='login'),\n    path('logout/', views.logout, name='logout'),\n    path('')\n]",
         "detail": "accounts.urls",
         "documentation": {}
     },
@@ -573,7 +573,7 @@
         "kind": 5,
         "importPath": "canteen_io.urls",
         "description": "canteen_io.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.home,name='home'),\n    path('admin/', admin.site.urls),\n    path('menu/',include('menu.urls') ),\n    path('account/',include('accounts.urls') ) ,\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.home,name='home'),\n    path('admin/', admin.site.urls),\n    path('menu/',include('menu.urls') ),\n    path('',include('accounts.urls') ) ,\n]",
         "detail": "canteen_io.urls",
         "documentation": {}
     },
